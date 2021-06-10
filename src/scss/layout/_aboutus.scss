@@ -1,0 +1,32 @@
+main {
+    margin-top: 7rem;
+}
+
+.aboutus-section {
+    margin-bottom: 9rem;
+}
+.cards-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @include tablet {
+        flex-direction: row;
+    }
+    .card-info {
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            width: 4.5rem;
+            height: 4.5rem;
+            margin: 0 auto;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+}
