@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./build/css/app.css">
-    <link rel="stylesheet" href="build/css/hamburgers.css">
-    <link rel="stylesheet" href="build/css/splide.min.css">
-    <title>Real State</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container contenido-header">
-            <div class="logo">
-                <a href="/">
-                    <img src="build/img/svg/logomark.svg" alt="logomark">
-                    <h2> Real State </h2>
-                </a>
-            </div>
+<?php require 'includes/functions.php';
 
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            <div class="nav-container">
-                <nav class="nav">
-                    <a href="/">Home</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="sales.html">Sales</a>
-                </nav>
-            </div>   
-        </div>
-    </header>
+includeTemplate('header');  ?>
     <main class="main">
         <section class="offers-section">
             <div class="title-offers">
@@ -44,7 +11,7 @@
             <div class="container-sales">
             <div class="cards-sales">
                 <div class="card-sales">
-                        <img loading='lazy' src="build/img/anuncio1.webp" alt="">
+                        <img loading='lazy' src="/build/img/anuncio1.webp" alt="">
                         <div class="description">
                             <h4>lumper av, atlanta </h4>
                             <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
@@ -62,13 +29,13 @@
                                     <p> 2 </p>
                                 </div>
                             </div>
-                            <a href="">
+                            <a href="/sale.php">
                                 <button class="btn-property">See Property</button>
                             </a>
                         </div>
                 </div>
                 <div class="card-sales">
-                    <img loading='lazy' src="build/img/anuncio1.webp" alt="">
+                    <img loading='lazy' src="/build/img/anuncio1.webp" alt="">
                     <div class="description">
                         <h4>lumper av, atlanta </h4>
                         <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
@@ -86,13 +53,13 @@
                                 <p> 2 </p>
                             </div>
                         </div>
-                        <a href="">
+                        <a href="/sale.php">
                             <button class="btn-property">See Property</button>
                         </a>
                     </div>
                 </div>
                 <div class="card-sales">
-                    <img loading='lazy' src="build/img/anuncio1.webp" alt="">
+                    <img loading='lazy' src="/build/img/anuncio1.webp" alt="">
                         <div class="description">
                             <h4>lumper av, atlanta </h4>
                             <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
@@ -110,39 +77,14 @@
                                     <p> 2 </p>
                                 </div>
                             </div>
-                            <a href="">
+                            <a href="/sale.php">
                                 <button class="btn-property">See Property</button>
                             </a>
                         </div>
                 </div>
             </div>
-            <a class="link-see-more" href="">
-                <button class="btn-see-more"> Ver todos </button>
-            </a>
         </div>
         </div>    
     </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <nav class="nav">
-                <a href="/">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="sales.html">Sales</a>
-            </nav>
-            <div class="logo">
-                <a class="logo-img" href="/">
-                    <img src="build/img/svg/logomark.svg" alt="logomark">
-                </a>
-                <a class="logo-text" href="/">
-                    <h2> Real State </h2>
-                </a>
-            </div>
-            
-        </div>
-        <p>Todos los derechos reservados, angel.dev 2021</p>
-    </footer>
-    <script src="./build/js/bundle.min.js"></script>
-</body>
-</html>
+    <?php includeTemplate('footer'); ?>   

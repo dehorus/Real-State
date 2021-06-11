@@ -1,156 +1,156 @@
 .offers-section {
-    background-color: $dark-blue;
-    padding-bottom: 3rem;
-    margin-top: 4rem;
+	background-color: $dark-blue;
+	padding-bottom: 3rem;
+	margin-top: 4rem;
 
-    .title-offers {
-        background-image: url(/build/img/anuncio6.jpg);
-        background-position: center;
-        background-size: cover;
-        transform: translateY(-2.5rem);
-        width: 90%;
-        margin: 0 auto;
+	.title-offers {
+		background-image: url(https://images.unsplash.com/photo-1505956821935-72e8a7e32f52?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+		background-position: center;
+		background-size: cover;
+		transform: translateY(-2.5rem);
+		width: 90%;
+		margin: 0 auto;
 
-        @include tablet{
-            width: 80%;
-        }
+		@include tablet {
+			width: 80%;
+		}
 
-        @include desktop{
-            width: 35%;
-            margin: 0;
-            margin-left: 4rem;
-        }
+		@include desktop {
+			width: 35%;
+			margin: 0;
+			margin-left: 4rem;
+		}
 
-        .title-bg {
-            background-color: rgba(000, 000, 000, 0.5);
+		.title-bg {
+			background-color: rgba(000, 000, 000, 0.5);
 
-            h3 {
-                color: white;
-                padding: 1rem 0;
-            }
-        }
-    }
- 
-    .cards-sales {
-        display: grid;
-        
-        @include grid(1, 4rem);
+			h3 {
+				color: white;
+				padding: 1rem 0;
+			}
+		}
+	}
 
-        margin-bottom: 3rem;
+	.cards-sales {
+		display: grid;
 
-        @include tablet {
-            @include grid(2, 3rem);
-        }
+		@include grid(1, 4rem);
 
-        @include desktop{
-            @include grid(3, 3rem);
-        }
+		margin-bottom: 3rem;
 
-        .card-sales {
-            width: 100%;
-            @include tablet {
-                height: 75%;
-            }
-            
-            img {
-                object-fit: cover;
-                width: 100%;
-            }
+		@include tablet {
+			@include grid(2, 3rem);
+		}
 
-            .description {
-                background-color: white;
-                text-align: center;
-                padding-bottom: 2rem;
-                position: relative;
-                h4 {
-                    text-align: center;
-                    margin: 0;
-                }
-                span {
-                    text-align: center;
-                }   
+		@include desktop {
+			@include grid(3, 3rem);
+		}
 
-                .characteristics {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    margin-top: 0.5rem;
-                    gap: 2rem;
+		.card-sales {
+			width: 100%;
+			@include tablet {
+				height: 75%;
+			}
 
-                    .icon {
-                        display: flex;
-                        flex-direction: row;
-                        width: 15%;
-                        height: 15%;
-                        gap: 0.5rem;
-                        img {
-                            object-fit: scale-down;
-                            width: 100%;
-                        }
-                    }
-                }
+			img {
+				object-fit: cover;
+				width: 100%;
+			}
 
-                a {
-                    position: absolute;
-                    bottom: -2rem;
-                    right: 0;
-                    width: 100%;
+			.description {
+				background-color: white;
+				text-align: center;
+				padding-bottom: 2rem;
+				position: relative;
+				h4 {
+					text-align: center;
+					margin: 0;
+				}
+				span {
+					text-align: center;
+				}
 
-                    .btn-property {
-                        width: 90%;
-                        padding: 1rem 0;
-                        background-color: $amarillo;
-                        border-style: none;
-                        color: $dark-blue;
-                        transition: all 0.5s;
-                        &:hover {
-                            background-color: $amarillo-hover;
-                        }
-                    }
-                }
-            }
-        }
-    }
+				.characteristics {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					margin-top: 0.5rem;
+					gap: 2rem;
 
-    .link-see-more {
-        width: 60%;
-        margin: 0 auto;
-        display: block;
-        margin-top: 2rem;
+					.icon {
+						display: flex;
+						flex-direction: row;
+						width: 15%;
+						height: 15%;
+						gap: 0.5rem;
+						img {
+							object-fit: scale-down;
+							width: 100%;
+						}
+					}
+				}
 
-        @include desktop{
-            width: 15%;
-            margin: 0;
-            margin-left: 4rem;
-        }
-    }
+				a {
+					position: absolute;
+					bottom: -2rem;
+					right: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
 
-    .btn-see-more {
-        border: none;
-        background-color: transparent;
-        color: white;
-        border-bottom: 1px solid white;
-        width: 100%;
-        margin: 0 auto;
-    }
+	.link-see-more {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+		margin-top: 2rem;
+
+		@include desktop {
+			width: 15%;
+			margin: 0;
+			margin-left: 4rem;
+		}
+	}
+
+	.btn-see-more {
+		border: none;
+		background-color: transparent;
+		color: white;
+		border-bottom: 1px solid white;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.btn-property {
+	width: 90%;
+	padding: 1rem 0;
+	background-color: $amarillo;
+	border-style: none;
+	color: $dark-blue;
+	transition: all 0.5s;
+	&:hover {
+		background-color: $amarillo-hover;
+	}
 }
 
 .characteristics {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0.5rem;
-    gap: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 0.5rem;
+	gap: 2rem;
 
-    .icon {
-        display: flex;
-        flex-direction: row;
-        width: 15%;
-        height: 15%;
-        gap: 0.5rem;
-        img {
-            object-fit: scale-down;
-            width: 100%;
-        }
-    }
+	.icon {
+		display: flex;
+		flex-direction: row;
+		width: 15%;
+		height: 15%;
+		gap: 0.5rem;
+		img {
+			object-fit: scale-down;
+			width: 100%;
+		}
+	}
 }

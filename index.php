@@ -1,46 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./build/css/app.css">
-    <link rel="stylesheet" href="build/css/hamburgers.css">
-    <link rel="stylesheet" href="build/css/splide.min.css">
-    <title>Real State</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container contenido-header">
-            <div class="logo">
-                <a href="/">
-                    <img src="build/img/svg/logomark.svg" alt="logomark">
-                    <h2> Real State </h2>
-                </a>
-            </div>
+<?php 
+    require 'includes/functions.php';
 
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            <div class="nav-container">
-                <nav class="nav">
-                    <a href="/">Home</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="sales.html">Sales</a>
-                </nav>
-            </div>   
-        </div>
-    </header>
+    includeTemplate('header');    
+?>
     <div class="hero">
         <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="house-bg">
         <div class="hero-text">
             <div class="container">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
             <div class="buttons-hero">
-                <a href="">
+                <a href="/contact.php">
                     <button class="btn-white">Get Started</button>
                 </a>
                 <a href="">
@@ -80,11 +49,11 @@
                 <div class="cards-sales">
                     <div class="card-sales">
                         <picture>
-                            <source srcset="build/img/anuncio1.webp" type="image/webp">
+                            <source srcset="/build/img/anuncio1.webp" type="image/webp">
             
-                            <source srcset="build/img/anuncio1.jpeg" type="image/jpeg">
+                            <source srcset="/build/img/anuncio1.jpeg" type="image/jpeg">
             
-                            <img loading='lazy' src="build/img/anuncio1.jpg" alt="imagen Property">
+                            <img loading='lazy' src="/build/img/anuncio1.jpg" alt="imagen Property">
                          </picture>
                             <div class="description">
                                 <h4>lumper av, atlanta </h4>
@@ -103,18 +72,18 @@
                                         <p> 2 </p>
                                     </div>
                                 </div>
-                                <a href="/sale.html">
+                                <a href="/sale.php">
                                     <button class="btn-property">See Property</button>
                                 </a>
                             </div>
                     </div>
                     <div class="card-sales">
                         <picture>
-                            <source srcset="build/img/anuncio2.webp" type="image/webp">
+                            <source srcset="/build/img/anuncio2.webp" type="image/webp">
             
-                            <source srcset="build/img/anuncio2.jpeg" type="image/jpeg">
+                            <source srcset="/build/img/anuncio2.jpeg" type="image/jpeg">
             
-                            <img loading='lazy' src="build/img/anuncio2.jpg" alt="imagen Property">
+                            <img loading='lazy' src="/build/img/anuncio2.jpg" alt="imagen Property">
                          </picture>
                         <div class="description">
                             <h4>lumper av, atlanta </h4>
@@ -133,18 +102,18 @@
                                     <p> 2 </p>
                                 </div>
                             </div>
-                            <a href="/sale.html">
+                            <a href="/sale.php">
                                 <button class="btn-property">See Property</button>
                             </a>
                         </div>
                     </div>
                     <div class="card-sales">
                         <picture>
-                            <source srcset="build/img/anuncio3.webp" type="image/webp">
+                            <source srcset="/build/img/anuncio3.webp" type="image/webp">
             
-                            <source srcset="build/img/anuncio3.jpeg" type="image/jpeg">
+                            <source srcset="/build/img/anuncio3.jpeg" type="image/jpeg">
             
-                            <img loading='lazy' src="build/img/anuncio3.jpg" alt="imagen Property">
+                            <img loading='lazy' src="/build/img/anuncio3.jpg" alt="imagen Property">
                          </picture>
                             <div class="description">
                                 <h4>lumper av, atlanta </h4>
@@ -163,13 +132,13 @@
                                         <p> 2 </p>
                                     </div>
                                 </div>
-                                <a href="sale.html">
+                                <a href="sale.php">
                                     <button class="btn-property">See Property</button>
                                 </a>
                             </div>
                     </div>
                 </div>
-                <a class="link-see-more" href="/sales.html">
+                <a class="link-see-more" href="/sales.php">
                     <button class="btn-see-more"> Ver todos </button>
                 </a>
             </div>
@@ -191,11 +160,11 @@
                 <div class="blog-cards">
                     <div class="blog-card">
                         <picture>
-                            <source srcset="build/img/blog1.webp" type="image/webp">
+                            <source srcset="/build/img/blog1.webp" type="image/webp">
             
-                            <source srcset="build/img/blog1.jpeg" type="image/jpeg">
+                            <source srcset="/build/img/blog1.jpeg" type="image/jpeg">
             
-                            <img loading='lazy' src="build/img/blog1.jpg" alt="imagen Property">
+                            <img loading='lazy' src="/build/img/blog1.jpg" alt="imagen Property">
                          </picture>
                         <h4>FOR GREAT PLACEMENT</h4>
                         <div class="blog-info">
@@ -204,7 +173,7 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam sit nostrum ratione dolores</p>
 
-                        <a href="">
+                        <a href="/article-blog.php">
                             Leer mas..
                         </a>
                     </div>
@@ -212,26 +181,4 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <nav class="nav">
-                <a href="/">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="sales.html">Sales</a>
-            </nav>
-            <div class="logo">
-                <a class="logo-img" href="/">
-                    <img src="build/img/svg/logomark.svg" alt="logomark">
-                </a>
-                <a class="logo-text" href="/">
-                    <h2> Real State </h2>
-                </a>
-            </div>
-            
-        </div>
-        <p>Todos los derechos reservados, angel.dev 2021</p>
-    </footer>
-    <script src="./build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php includeTemplate('footer'); ?>   

@@ -1,94 +1,136 @@
 html {
-    box-sizing: border-box;
-    overflow-x: hidden;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 body {
-    font-family: $fuente_principal;
-    font-size: 1rem;
-    line-height: 1.8;
+	font-family: $fuente_principal;
+	font-size: 1rem;
+	line-height: 1.8;
 }
 p {
-    color: $negro;
-    font-size: 1rem;
+	color: $negro;
+	font-size: 1rem;
 }
 .container {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
+	width: 95%;
+	max-width: 120rem;
+	margin: 0 auto;
 
-    @include tablet {
-        width: 75%;
-    }
+	@include tablet {
+		width: 75%;
+	}
 
-    @include desktop {
-        width: 55%;
-    }
+	@include desktop {
+		width: 55%;
+	}
 }
 
 .container-sales {
-    width: 95%;
-    margin: 0 auto;
+	width: 95%;
+	margin: 0 auto;
 
-    @include tablet {
-        width: 95%;
-    }
+	@include tablet {
+		width: 95%;
+	}
 
-    @include tablet {
-        width: 95%;
-    }
-
+	@include tablet {
+		width: 95%;
+	}
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 img,
 picture {
-    width: 100%;
-    display: block;
+	width: 100%;
+	display: block;
 }
 
-h1, h2, h3 {
-    font-family: $fuente_headers;
-    text-align: center;
-    
+h1,
+h2,
+h3 {
+	font-family: $fuente_headers;
+	text-align: center;
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: $black;
-    letter-spacing: 0.07em;
+	font-size: 3.5rem;
+	font-weight: $black;
+	letter-spacing: 0.07em;
 }
 h2 {
-    font-size: 3rem;
-    font-weight: $bold;
-    letter-spacing: 0.07em;
+	font-size: 3rem;
+	font-weight: $bold;
+	letter-spacing: 0.07em;
 }
 h3 {
-    font-size: 2rem;
-    font-weight: $bold;
-    letter-spacing: 0.05em;
+	font-size: 2rem;
+	font-weight: $bold;
+	letter-spacing: 0.05em;
 }
 h4 {
-    font-size: 1.5rem;
-    font-weight: $regular;
-    letter-spacing: 0.05em;
+	font-size: 1.5rem;
+	font-weight: $regular;
+	letter-spacing: 0.05em;
 }
 
 button {
-    font-family: $fuente_headers;
-    font-size: 1rem;
-    font-weight: $black;
-    letter-spacing: 0.07em;
+	font-family: $fuente_headers;
+	font-size: 1rem;
+	font-weight: $black;
+	letter-spacing: 0.07em;
 }
 
 span {
-    font-size: 0.8rem;
-    font-weight: $bold;
-    color: rgba($color: #000000, $alpha: 0.6);
-    letter-spacing: 0.4em;
+	font-size: 0.8rem;
+	font-weight: $bold;
+	color: rgba($color: #000000, $alpha: 0.6);
+	letter-spacing: 0.4em;
+}
+
+/* Botones */
+
+.btn {
+	border: none;
+	border-bottom: 1px solid white;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.btn-positive {
+	background-color: $dark-blue;
+	color: white;
+	transition: all 0.5s;
+
+	&:hover {
+		background-color: #005eca;
+	}
+}
+
+.btn-negative {
+	background-color: $carmesi;
+	color: white;
+	transition: all 0.5s;
+
+	&:hover {
+		background-color: rgb(211, 70, 70);
+	}
+}
+
+.btn-neutral {
+	background-color: $amarillo;
+	color: white;
+	transition: all 0.5s;
+
+	&:hover {
+		background-color: $amarillo-hover;
+	}
 }
